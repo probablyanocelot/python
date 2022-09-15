@@ -1,0 +1,10 @@
+
+data.json
+__pycache__/
+__pycache__/config.cpython-39.pyc
+.vscode/
+full_data.json
+player.code-workspace
+tempCodeRunnerFile.py
+config.py
+.env

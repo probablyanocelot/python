@@ -1,0 +1,33 @@
+<Screen>:
+    on_leave: app.previous_screen = self.name # app.root.previous()
+
+
+
+<ScreenManagement>:
+    HomeScreen:
+        name: 'home'
+    TodayScreen:
+        name: 'today'
+    TomorrowScreen:
+        name: 'tomorrow'
+
+
+<HomeScreen>:
+    HomeScreenLayout:
+        # ClockLabel:
+        #     id: title
+        #     pos_hint: {'center_x': .5}
+        #     size_hint: .85, 1
+            # on_press: date.dropdown() MAYBE WEEKLY PLANNER IN FUTURE
+        Button:
+            font_size: '80dp'
+            text: 'Today'
+            pos_hint: {'center_x': .5}
+            size_hint: .85, 1
+            # on_press: root.manager.current = 'today'
+        Button:
+            font_size: '80dp'
+            text: 'Tomorrow'
+            pos_hint: {'center_x': .5}
+            size_hint: .85, 1
+            # on_press: root.manager.current = 'tomorrow'
